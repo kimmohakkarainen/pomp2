@@ -3,13 +3,13 @@ import ReactDOM from "react-dom";
 import { createBrowserHistory } from "history";
 import { Router, Route, Switch } from "react-router-dom";
 
-import "assets/scss/material-kit-react.scss";
+import "/src/assets/scss/material-kit-react.scss";
 
 // pages for this product
-import Components from "views/Components/Components.js";
-import LandingPage from "views/LandingPage/LandingPage.js";
-import ProfilePage from "views/ProfilePage/ProfilePage.js";
-import LoginPage from "views/LoginPage/LoginPage.js";
+import Components from "/src/views/Components/Components.js";
+import LandingPage from "/src/views/LandingPage/LandingPage.js";
+import ProfilePage from "/src/views/ProfilePage/ProfilePage.js";
+import LoginPage from "/src/views/LoginPage/LoginPage.js";
 
 var hist = createBrowserHistory();
 
