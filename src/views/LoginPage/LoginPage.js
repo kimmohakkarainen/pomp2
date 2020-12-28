@@ -7,27 +7,27 @@ import Icon from "@material-ui/core/Icon";
 import Email from "@material-ui/icons/Email";
 import People from "@material-ui/icons/People";
 // core components
-import Header from "components/Header/Header.js";
-import HeaderLinks from "components/Header/HeaderLinks.js";
-import Footer from "components/Footer/Footer.js";
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import Button from "components/CustomButtons/Button.js";
-import Card from "components/Card/Card.js";
-import CardBody from "components/Card/CardBody.js";
-import CardHeader from "components/Card/CardHeader.js";
-import CardFooter from "components/Card/CardFooter.js";
-import CustomInput from "components/CustomInput/CustomInput.js";
+import Header from "/src/components/Header/Header.js";
+import HeaderLinks from "/src/components/Header/HeaderLinks.js";
+import Footer from "/src/components/Footer/Footer.js";
+import GridContainer from "/src/components/Grid/GridContainer.js";
+import GridItem from "/src/components/Grid/GridItem.js";
+import Button from "/src/components/CustomButtons/Button.js";
+import Card from "/src/components/Card/Card.js";
+import CardBody from "/src/components/Card/CardBody.js";
+import CardHeader from "/src/components/Card/CardHeader.js";
+import CardFooter from "/src/components/Card/CardFooter.js";
+import CustomInput from "/src/components/CustomInput/CustomInput.js";
 
-import styles from "assets/jss/material-kit-react/views/loginPage.js";
+import styles from "/src/assets/jss/material-kit-react/views/loginPage.js";
 
-import image from "assets/img/bg7.jpg";
+import image from "/src/assets/img/bg7.jpg";
 
 const useStyles = makeStyles(styles);
 
 export default function LoginPage(props) {
   const [cardAnimaton, setCardAnimation] = React.useState("cardHidden");
-  setTimeout(function() {
+  setTimeout(function () {
     setCardAnimation("");
   }, 700);
   const classes = useStyles();
@@ -62,7 +62,7 @@ export default function LoginPage(props) {
                         href="#pablo"
                         target="_blank"
                         color="transparent"
-                        onClick={e => e.preventDefault()}
+                        onClick={(e) => e.preventDefault()}
                       >
                         <i className={"fab fa-twitter"} />
                       </Button>
@@ -71,7 +71,7 @@ export default function LoginPage(props) {
                         href="#pablo"
                         target="_blank"
                         color="transparent"
-                        onClick={e => e.preventDefault()}
+                        onClick={(e) => e.preventDefault()}
                       >
                         <i className={"fab fa-facebook"} />
                       </Button>
@@ -80,7 +80,7 @@ export default function LoginPage(props) {
                         href="#pablo"
                         target="_blank"
                         color="transparent"
-                        onClick={e => e.preventDefault()}
+                        onClick={(e) => e.preventDefault()}
                       >
                         <i className={"fab fa-google-plus-g"} />
                       </Button>

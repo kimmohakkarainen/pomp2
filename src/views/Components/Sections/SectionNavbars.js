@@ -3,7 +3,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-import Icon from "@material-ui/core/Icon";
+import { Icon } from "@material-ui/icons";
 // @material-ui/icons
 import Search from "@material-ui/icons/Search";
 import Email from "@material-ui/icons/Email";

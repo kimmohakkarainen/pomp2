@@ -3,7 +3,7 @@ import React from "react";
 import Slider from "nouislider";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-import InputAdornment from "@material-ui/core/InputAdornment";
+import { InputAdornment } from "@material-ui/core";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 import Radio from "@material-ui/core/Radio";
