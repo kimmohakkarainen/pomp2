@@ -11,10 +11,10 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 
 // core components
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
+import GridContainer from "/src/components/Grid/GridContainer.js";
+import GridItem from "/src/components/Grid/GridItem.js";
 
-import styles from "assets/jss/material-kit-react/components/navPillsStyle.js";
+import styles from "/src/assets/jss/material-kit-react/components/navPillsStyle.js";
 
 const useStyles = makeStyles(styles);
 
@@ -23,7 +23,7 @@ export default function NavPills(props) {
   const handleChange = (event, active) => {
     setActive(active);
   };
-  const handleChangeIndex = index => {
+  const handleChangeIndex = (index) => {
     setActive(index);
   };
   const classes = useStyles();

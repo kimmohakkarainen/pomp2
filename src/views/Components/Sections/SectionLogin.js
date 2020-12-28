@@ -7,16 +7,16 @@ import Icon from "@material-ui/core/Icon";
 import People from "@material-ui/icons/People";
 import Email from "@material-ui/icons/Email";
 // core components
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import Card from "components/Card/Card.js";
-import CardHeader from "components/Card/CardHeader.js";
-import CardBody from "components/Card/CardBody.js";
-import CardFooter from "components/Card/CardFooter.js";
-import Button from "components/CustomButtons/Button.js";
-import CustomInput from "components/CustomInput/CustomInput.js";
+import GridContainer from "/src/components/Grid/GridContainer.js";
+import GridItem from "/src/components/Grid/GridItem.js";
+import Card from "/src/components/Card/Card.js";
+import CardHeader from "/src/components/Card/CardHeader.js";
+import CardBody from "/src/components/Card/CardBody.js";
+import CardFooter from "/src/components/Card/CardFooter.js";
+import Button from "/src/components/CustomButtons/Button.js";
+import CustomInput from "/src/components/CustomInput/CustomInput.js";
 
-import styles from "assets/jss/material-kit-react/views/componentsSections/loginStyle.js";
+import styles from "/src/assets/jss/material-kit-react/views/componentsSections/loginStyle.js";
 
 const useStyles = makeStyles(styles);
 
@@ -37,7 +37,7 @@ export default function SectionLogin() {
                       href="#pablo"
                       target="_blank"
                       color="transparent"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       <i className={classes.socialIcons + " fab fa-twitter"} />
                     </Button>
@@ -46,7 +46,7 @@ export default function SectionLogin() {
                       href="#pablo"
                       target="_blank"
                       color="transparent"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       <i className={classes.socialIcons + " fab fa-facebook"} />
                     </Button>
@@ -55,7 +55,7 @@ export default function SectionLogin() {
                       href="#pablo"
                       target="_blank"
                       color="transparent"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       <i
                         className={

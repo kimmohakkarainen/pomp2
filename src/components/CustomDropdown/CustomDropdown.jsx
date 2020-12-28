@@ -16,9 +16,9 @@ import Icon from "@material-ui/core/Icon";
 import Popper from "@material-ui/core/Popper";
 
 // core components
-import Button from "components/CustomButtons/Button.jsx";
+import Button from "/src/components/CustomButtons/Button.jsx";
 
-import customDropdownStyle from "assets/jss/material-kit-react/components/customDropdownStyle.jsx";
+import customDropdownStyle from "/src/assets/jss/material-kit-react/components/customDropdownStyle.jsx";
 
 class CustomDropdown extends React.Component {
   constructor(props) {
@@ -28,15 +28,15 @@ class CustomDropdown extends React.Component {
     };
   }
   handleClick = () => {
-    this.setState(state => ({ open: !state.open }));
+    this.setState((state) => ({ open: !state.open }));
   };
-  handleClose = param => {
+  handleClose = (param) => {
     this.setState({ open: false });
     if (this.props && this.props.onClick) {
       this.props.onClick(param);
     }
   };
-  handleCloseAway = event => {
+  handleCloseAway = (event) => {
     if (this.anchorEl.contains(event.target)) {
       return;
     }
@@ -96,7 +96,7 @@ class CustomDropdown extends React.Component {
             aria-owns={open ? "menu-list" : null}
             aria-haspopup="true"
             {...buttonProps}
-            buttonRef={node => {
+            buttonRef={(node) => {
               this.anchorEl = node;
             }}
             onClick={this.handleClick}
@@ -194,7 +194,11 @@ CustomDropdown.propTypes = {
     "rose"
   ]),
   buttonText: PropTypes.node,
-  buttonIcon: PropTypes.oneOfType([PropTypes.func, PropTypes.object, PropTypes.string]),
+  buttonIcon: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.object,
+    PropTypes.string
+  ]),
   dropdownList: PropTypes.array,
   buttonProps: PropTypes.object,
   dropup: PropTypes.bool,

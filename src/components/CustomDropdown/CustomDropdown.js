@@ -12,32 +12,32 @@ import ClickAwayListener from "@material-ui/core/ClickAwayListener";
 import Paper from "@material-ui/core/Paper";
 import Grow from "@material-ui/core/Grow";
 import Divider from "@material-ui/core/Divider";
-import Icon from "@material-ui/core/Icon";
+import { Icon } from "@material-ui/icons";
 import Popper from "@material-ui/core/Popper";
 
 // core components
-import Button from "components/CustomButtons/Button.js";
+import Button from "/src/components/CustomButtons/Button.js";
 
-import styles from "assets/jss/material-kit-react/components/customDropdownStyle.js";
+import styles from "/src/assets/jss/material-kit-react/components/customDropdownStyle.js";
 
 const useStyles = makeStyles(styles);
 
 export default function CustomDropdown(props) {
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const handleClick = event => {
+  const handleClick = (event) => {
     if (anchorEl && anchorEl.contains(event.target)) {
       setAnchorEl(null);
     } else {
       setAnchorEl(event.currentTarget);
     }
   };
-  const handleClose = param => {
+  const handleClose = (param) => {
     setAnchorEl(null);
     if (props && props.onClick) {
       props.onClick(param);
     }
   };
-  const handleCloseAway = event => {
+  const handleCloseAway = (event) => {
     if (anchorEl.contains(event.target)) {
       return;
     }

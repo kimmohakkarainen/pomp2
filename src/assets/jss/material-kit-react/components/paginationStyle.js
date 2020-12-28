@@ -5,7 +5,7 @@ import {
   successColor,
   warningColor,
   dangerColor
-} from "assets/jss/material-kit-react.js";
+} from "/src/assets/jss/material-kit-react.js";
 
 const paginationStyle = {
   pagination: {

@@ -17,11 +17,11 @@ import Popover from "@material-ui/core/Popover";
 import LibraryBooks from "@material-ui/icons/LibraryBooks";
 import Close from "@material-ui/icons/Close";
 // core components
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import Button from "components/CustomButtons/Button.js";
+import GridContainer from "/src/components/Grid/GridContainer.js";
+import GridItem from "/src/components/Grid/GridItem.js";
+import Button from "/src/components/CustomButtons/Button.js";
 
-import styles from "assets/jss/material-kit-react/views/componentsSections/javascriptStyles.js";
+import styles from "/src/assets/jss/material-kit-react/views/componentsSections/javascriptStyles.js";
 
 const useStyles = makeStyles(styles);
 
@@ -143,7 +143,7 @@ export default function SectionJavascript() {
             <div className={classes.title}>
               <h3>Popovers</h3>
             </div>
-            <Button onClick={event => setAnchorElLeft(event.currentTarget)}>
+            <Button onClick={(event) => setAnchorElLeft(event.currentTarget)}>
               On left
             </Button>
             <Popover
@@ -168,7 +168,7 @@ export default function SectionJavascript() {
                 Here will be some very useful information about his popover.
               </div>
             </Popover>
-            <Button onClick={event => setAnchorElTop(event.currentTarget)}>
+            <Button onClick={(event) => setAnchorElTop(event.currentTarget)}>
               On top
             </Button>
             <Popover
@@ -192,7 +192,7 @@ export default function SectionJavascript() {
                 Here will be some very useful information about his popover.
               </div>
             </Popover>
-            <Button onClick={event => setAnchorElBottom(event.currentTarget)}>
+            <Button onClick={(event) => setAnchorElBottom(event.currentTarget)}>
               On bottom
             </Button>
             <Popover
@@ -216,7 +216,7 @@ export default function SectionJavascript() {
                 Here will be some very useful information about his popover.
               </div>
             </Popover>
-            <Button onClick={event => setAnchorElRight(event.currentTarget)}>
+            <Button onClick={(event) => setAnchorElRight(event.currentTarget)}>
               On right
             </Button>
             <Popover

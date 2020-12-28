@@ -5,9 +5,9 @@ import {
   successColor,
   warningColor,
   dangerColor
-} from "assets/jss/material-kit-react.js";
+} from "/src/assets/jss/material-kit-react.js";
 
-const navPillsStyle = theme => ({
+const navPillsStyle = (theme) => ({
   root: {
     marginTop: "20px",
     paddingLeft: "0",

@@ -14,15 +14,15 @@ import People from "@material-ui/icons/People";
 import Check from "@material-ui/icons/Check";
 import FiberManualRecord from "@material-ui/icons/FiberManualRecord";
 // core components
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import Button from "components/CustomButtons/Button.js";
-import CustomInput from "components/CustomInput/CustomInput.js";
-import CustomLinearProgress from "components/CustomLinearProgress/CustomLinearProgress.js";
-import Paginations from "components/Pagination/Pagination.js";
-import Badge from "components/Badge/Badge.js";
+import GridContainer from "/src/components/Grid/GridContainer.js";
+import GridItem from "/src/components/Grid/GridItem.js";
+import Button from "/src/components/CustomButtons/Button.js";
+import CustomInput from "/src/components/CustomInput/CustomInput.js";
+import CustomLinearProgress from "/src/components/CustomLinearProgress/CustomLinearProgress.js";
+import Paginations from "/src/components/Pagination/Pagination.js";
+import Badge from "/src/components/Badge/Badge.js";
 
-import styles from "assets/jss/material-kit-react/views/componentsSections/basicsStyle.js";
+import styles from "/src/assets/jss/material-kit-react/views/componentsSections/basicsStyle.js";
 
 const useStyles = makeStyles(styles);
 
@@ -57,7 +57,7 @@ export default function SectionBasics() {
     }
     return function cleanup() {};
   });
-  const handleToggle = value => {
+  const handleToggle = (value) => {
     const currentIndex = checked.indexOf(value);
     const newChecked = [...checked];
 
@@ -475,7 +475,7 @@ export default function SectionBasics() {
                   control={
                     <Switch
                       checked={checkedA}
-                      onChange={event => setCheckedA(event.target.checked)}
+                      onChange={(event) => setCheckedA(event.target.checked)}
                       value="checkedA"
                       classes={{
                         switchBase: classes.switchBase,
@@ -496,7 +496,7 @@ export default function SectionBasics() {
                   control={
                     <Switch
                       checked={checkedB}
-                      onChange={event => setCheckedB(event.target.checked)}
+                      onChange={(event) => setCheckedB(event.target.checked)}
                       value="checkedB"
                       classes={{
                         switchBase: classes.switchBase,
